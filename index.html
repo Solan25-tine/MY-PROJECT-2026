@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kendeke Solantine - Software Engineer Portfolio</title>
+    <title>Tecnovice Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="pic.JPG.JPG" alt="Portfolio Picture">
-<header>
-        <div class="container">
-            <div class="profile-photo">
-                <img src="pic.JPG.JPG" alt="Kendeke Solantine">
-            </div>
-            <div class="intro">
-                <h1>Hi! i`m Kendeke Solantine</h1>
-                <h2><b>Aspiring Software Engineer</b></h2>
-                <p>
-                    <b>I am a passionate student based in Cameroon, working towards becoming a professional software engineer.  
-                    I embrace challenges, learn from my mistakes, and strive to improve every day.  
-                    My goal is to create impactful solutions that make a difference. </b> 
+    <div class="form-container">
+        <form id="regform" novalidate>
+            <h1 class="shine">CREATE AN ACCOUNT</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email ADDRESS:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="repeatPassword">Repeat Password:</label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required>
+
+            <button type="submit" id="submit">Register</button>
+
+            <!-- Already have an account? Login -->
+            <div class="form-footer" style="text-align:center; margin-top:12px;">
+                <p style="color:#2cefef; margin:0;">
+                    Already have an account? <a href="login.html" style="color:#c8bbdc; font-weight:700; text-decoration:none;">Login</a>
                 </p>
             </div>
-        </div>
-    </header>
+        </form>
+    </div>
 
-    <section class="skills">
-        <h3><b>Skills & Interests</b></h3>
-        <ul>
-            <li><b>A PROGRAMMER in HTML, CSS, JavaScript</b></li>
-            <li><b>Problem Solving & Debugging</b></li>
-            <li><b>Responsive Web Design</b></li>
-            <li><b>Git/GitHub skills</b></li>
-            <li><b>Continuous Learning and grow</b></li>
-        </ul>
-    </section>
-<section class="recommend">
-        <h3><b>Get in Touch / Recommend Me</b></h3>
-        <p><b>If you’d like to collaborate, recommend me, or discuss opportunities, feel free to reach out.</b></p>
-        <a href="mailto:solantineminash@icloud.com" class="btn">Contact Me</a>
-    </section>
-    <footer>
-        <p><b>© 2026 Kendeke Solantine | Aspiring Software Engineer</b></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
