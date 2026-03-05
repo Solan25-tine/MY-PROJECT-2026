@@ -4,41 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnovice Registration Form</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="form-container">
-        <form id="regform" novalidate>
-            <h1 class="shine">CREATE AN ACCOUNT</h1>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required>
-
-            <label for="email">Email ADDRESS:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Enter Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="repeatPassword">Repeat Password:</label>
-            <input type="password" id="repeatPassword" name="repeatPassword" required>
-
-            <button type="submit" id="submit">Register</button>
-
-            <!-- Already have an account? Login -->
-            <div class="form-footer" style="text-align:center; margin-top:12px;">
-                <p style="color:#2cefef; margin:0;">
-                    Already have an account? <a href="login.html" style="color:#c8bbdc; font-weight:700; text-decoration:none;">Login</a>
-                </p>
-            </div>
-        </form>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <button id="operator" onclick="clearDisplay()">C</button>
+            <button id="operator" onclick="deleteLast()">DEL</button>
+            <button id="operator" onclick="appendToDisplay('+/-')">+/-</button>
+            <button id="operator" onclick="appendToDisplay('%')">%</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button id="operator" onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button id="operator" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button id="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button id="operator" onclick="appendToDisplay('.')">.</button>
+            <button id="operator" onclick="calculateResult()">=</button>
+            <button id="operator" onclick="appendToDisplay('+')">+</button>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
